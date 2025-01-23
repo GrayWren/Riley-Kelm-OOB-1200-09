@@ -20,6 +20,6 @@ public class ClassExercise1 {
         System.out.println("Please enter your temperature in Celsius to be converted into Farenheit: ");
         float celsius = input3.nextFloat();  // Read user input
         double fahrenheit=(celsius)*(9.0/5.0)+32;
-        System.out.println(celsius+ " celsius converted to fahrenheit is " + fahrenheit+" F");
+        System.out.println(celsius+ "C\u00B0 celsius converted to fahrenheit is " + fahrenheit+"F\u00B0");
     }
 }
