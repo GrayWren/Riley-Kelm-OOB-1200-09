@@ -5,6 +5,8 @@ public class While {
     public static void main(String[] args) {
         System.out.println("Please input range");
         int i = input.nextInt();
+        System.out.println("Please input another range");
+        int b=input.nextInt();
        /* int n = 0;
        /* while (n < i) {
             if (n % 2 == 0) {
@@ -19,6 +21,9 @@ public class While {
             } while (i < 8);*/
             for(int x=0; x<i; x++){
                 System.out.println(x);
+            }
+            for(int c=0; c<b; c++){
+                System.out.println(c);
             }
 
         }
