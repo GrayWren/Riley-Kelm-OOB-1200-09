@@ -20,10 +20,10 @@ public class While {
                 i++;
             } while (i < 8);*/
             for(int x=0; x<i; x++){
-                System.out.println(x);
+                System.out.println("Beep"+x);
             }
             for(int c=0; c<b; c++){
-                System.out.println(c);
+                System.out.println("Boop"+c);
             }
 
         }
