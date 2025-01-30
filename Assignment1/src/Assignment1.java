@@ -8,15 +8,16 @@ public class Assignment1 {
         System.out.println("Please input your height: ");
         Float height = input.nextFloat();
         while (height_checker==false){
+           
+            if (24>height || height>120){
+                System.out.println("Please input a height between 24 and 120 inches");
+                height=input.nextFloat();
+            } else {
+                height_checker=true;
 
-
-                if (24>height || height>120){
-                    System.out.println("Please input a height between 24 and 120 inches");
-                    height=input.nextFloat();
-                } else {
-                    height_checker=true;
-                    System.out.println("pog");
             }
+
+
         }
         System.out.println("Please input your weight: ");
         Float weight = input.nextFloat();
