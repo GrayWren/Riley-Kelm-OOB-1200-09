@@ -28,7 +28,7 @@ public class Assignment1 {
 
             }else {
                 weight_checker=true;
-                System.out.println("pag");
+
             }
         }
 
