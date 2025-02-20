@@ -1,5 +1,5 @@
 public class week7 {
-    public static int mystery(int n){
+    public int mystery(int n){
         if (n<10){
             return n;
         }else {
