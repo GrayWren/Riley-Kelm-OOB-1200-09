@@ -10,6 +10,6 @@ public class week7 {
     }
 
     public static void main(String[] args) {
-        System.out.println(mystery(648));
+        System.out.println();
     }
 }
