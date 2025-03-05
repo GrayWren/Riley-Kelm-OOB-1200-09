@@ -6,5 +6,6 @@ public class Main
         Cat c = new Cat();
         c.animalSound();
         c.sound();
+        c.sleep();
     }
 }
