@@ -71,12 +71,12 @@ public  static int [] getGameScores(String name){
         scorelist[x]=getTurnScore(x,name);
 
     }
-if (game[10][0]==1){
+if (game[9][0]==1){
     System.out.println("cooldog");
-    getTurnScore(11,name);
-    getTurnScore(12,name);
-} else if (game[10][0]==2) {
-    getTurnScore(11,name);
+    scorelist[10]= getTurnScore(10,name);
+    scorelist[11]= getTurnScore(11,name);
+} else if (game[9][0]==2) {
+    scorelist[10]=  getTurnScore(10,name);
 }
 
     for (int x = 0; x < 10; x++ ){
@@ -95,23 +95,33 @@ if (game[10][0]==1){
 
 
     public static void main(String[] args) {
+        String play = "1";
+        while (play.equals("1")) {
+            System.out.println("Please enter Player ones name: ");
+            String playerone = input.next();
+            System.out.println("Please enter Player twos name: ");
+            String playertwo = input.next();
+            int playerone_total_score = 0;
+            int playertwo_total_score = 0;
+            int[] playerone_score = getGameScores(playerone);
+            int[] playertwo_score = getGameScores(playertwo);
+            System.out.println("        " + playerone + "            " + playertwo);
+            for (int x = 0; x < 10; x++) {
+                playerone_total_score += playerone_score[x];
+                playertwo_total_score += playertwo_score[x];
+                System.out.println("Frame:" + (x + 1) + " " + playerone + " scored :" + playerone_score[x] + " " + playertwo + " scored: " + playertwo_score[x]);
 
-        System.out.println("Please enter Player ones name: ");
-        String playerone=input.nextLine();
-        System.out.println("Please enter Player twos name: ");
-        String playertwo=input.nextLine();
-        int playerone_total_score=0;
-        int playertwo_total_score=0;
-        int [] playerone_score=getGameScores(playerone);
-       // int [] playertwo_score=getGameScores(playertwo);
-        System.out.println("     "+playerone+"  "+playertwo);
-        for (int x = 0; x < 10; x++ ){
-            playerone_total_score+=playerone_score[x];
-           // playertwo_total_score+=playertwo_score[x];
-            System.out.println("Frame:"+(x+1)+ " Player "+playerone+" scored :"+playerone_score[x]);
-
+            }
+            System.out.println("Overall points:" + playerone + ": " + playerone_total_score+" and "+playertwo+": "+playertwo_total_score);
+            if (playerone_total_score > playertwo_total_score) {
+                System.out.println(playerone + " wins!!!!!!!!1");
+            } else if (playerone_total_score < playertwo_total_score) {
+                System.out.println(playertwo + " wins!!!!!!!!");
+            } else {
+                System.out.println("Its a Draw!!!!!");
+            }
+            System.out.println("Would you like to play again press 1 if so press anything else to quit");
+            play=input.next();
         }
-        System.out.println("Overall points scored for "+ playerone+" is "+playerone_total_score);
-
     }
 }
