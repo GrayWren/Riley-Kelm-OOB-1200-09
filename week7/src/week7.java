@@ -1,5 +1,5 @@
 public class week7 {
-    public int mystery(int n){
+    public static int mystery(int n){
         if (n<10){
             return n;
         }else {
@@ -10,6 +10,6 @@ public class week7 {
     }
 
     public static void main(String[] args) {
-        System.out.println();
+        System.out.println(mystery(612));
     }
 }
