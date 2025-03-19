@@ -5,7 +5,15 @@ public class World {
     private String name;
     public int age;
 
+    static int val;
+
+    static void read(){
+
+    }
+
+
     public void hello(){
+
         System.out.println("Hello");
     }
 

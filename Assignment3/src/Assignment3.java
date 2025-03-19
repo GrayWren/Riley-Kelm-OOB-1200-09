@@ -25,7 +25,6 @@ public class Assignment3 {
 
     //a loop that checks that validates if the score is between 0 and 10
     while (check==false){
-        System.out.println("check");
         if (score>10|| score<0){
             System.out.println("Please input a proper interger score between 0 and 10");
             score=input.nextInt();
@@ -44,7 +43,6 @@ public static int getTurnScore(int frame, String name){
 
     //checks if the score was a strike if so set that frames variable to 1 in the game array
     if (score==10) {
-        System.out.println("coolio");
         game[frame][0]=1;
 
         //if the score is less then 10 ask for second score

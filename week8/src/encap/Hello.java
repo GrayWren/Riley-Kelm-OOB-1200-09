@@ -6,7 +6,8 @@ public class Hello {
         w.age=23;
         w.setter(19987798,"Riley");
         w.getter();
-
+        World.val=30;
+        World.read();
 
 
     }
