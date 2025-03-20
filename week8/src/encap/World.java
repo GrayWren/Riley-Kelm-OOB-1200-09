@@ -23,6 +23,7 @@ public class World {
     }
 
     public void getter(){
+
         System.out.println("The name is "+name+" and the roll no. is "+rollno);
     }
 
