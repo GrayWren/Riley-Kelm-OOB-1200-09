@@ -90,6 +90,7 @@ public class Player extends Turn{
 
         //gettign scores
         for (int x = 0; x < 10; x++) {
+            //p1
             System.out.println("Turn "+(x+1)+" for "+ player1);
             t.scoreGrabber();
 

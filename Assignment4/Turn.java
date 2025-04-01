@@ -61,7 +61,6 @@ public void scoreGrabber(){
         }
         throw_twoSet(input.nextInt());
 
-        // s.pinSet(s.pinGet()-t.throw_twoGet());
         while (check==1){
             if (throw_twoGet()>pinGet()){
                 System.out.println("You cant have knocked down more pins then there are liar");
