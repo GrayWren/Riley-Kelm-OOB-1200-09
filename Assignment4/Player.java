@@ -103,8 +103,7 @@ public class Player extends Turn{
             }
 
             status[x][0]=t.scoreGet();
-            System.out.println(status[x][0]);
-            System.out.println(status[x][1]);
+
             t.isSpareSet(false);
             t.isStrikeSet(false);
 
@@ -187,7 +186,6 @@ public class Player extends Turn{
         if (score1>score2){
             System.out.println("Congrats "+player1+ " WINS!!!");
             setWins(1);
-            System.out.println(getWins());
         } else if (score1==score2) {
             System.out.println("ITS a DRAW");
             setWins(0);

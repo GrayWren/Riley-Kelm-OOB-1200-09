@@ -80,10 +80,8 @@ public void scoreGrabber(){
         scoreSet(throw_oneGet()+throw_twoGet());
 
         isStrikeSet(true);
-        System.out.println("strike");
     }
     if (scoreGet()==10&&throw_twoGet()!=0){
-        System.out.println("spare");
         isSpareSet(true);
     }
     pinSet(10);
